@@ -13,65 +13,41 @@ import java.util.List;
 public class ModConfig extends MidnightConfig {
 	@Entry
 	public static List<String> disallowedEnchantments = Arrays.asList(
-			"minecraft:aqua_affinity",
-			"minecraft:bane_of_arthropods",
-			"minecraft:binding_curse",
-			"minecraft:blast_protection",
-			"minecraft:breach",
-			"minecraft:density",
-			"minecraft:depth_strider",
-			"minecraft:efficiency",
-			"minecraft:feather_falling",
-			"minecraft:fire_protection",
-			"minecraft:flame",
-			"minecraft:fortune",
-			"minecraft:frost_walker",
-			"minecraft:impaling",
-			"minecraft:infinity",
-			"minecraft:knockback",
-			"minecraft:looting",
-			"minecraft:loyalty",
-			"minecraft:lure",
-			"minecraft:mending",
-			"minecraft:multishot",
-			"minecraft:piercing",
-			"minecraft:power",
-			"minecraft:projectile_protection",
-			"minecraft:protection",
-			"minecraft:punch",
-			"minecraft:quick_charge",
-			"minecraft:respiration",
-			"minecraft:sharpness",
-			"minecraft:smite",
-			"minecraft:soul_speed",
-			"minecraft:sweeping_edge",
-			"minecraft:swift_sneak",
-			"minecraft:thorns",
-			"minecraft:unbreaking",
-			"minecraft:vanishing_curse");
+			"enchancement:disarm",
+			"enchancement:assimilation",
+			"enchancement:perception",
+			"enchancement:sticky",
+			"enchancement:molten",
+			"enchancement:bury",
+			"enchancement:grapple",
+			"enchancement:strafe",
+			"enchancement:brimstone",
+			"enchancement:warp",
+			"enchancement:chaos",
+			"enchancement:phasing");
 	@Entry
 	public static boolean invertedList = false;
 
 	@Entry
-	public static OverhaulMode overhaulEnchantingTable = OverhaulMode.ACCEPTABLE;
+	public static OverhaulMode overhaulEnchantingTable = OverhaulMode.DISABLED;
 
 	@Entry
-	public static boolean singleLevelMode = true;
+	public static boolean singleLevelMode = false;
 	@Entry
-	public static int enchantmentLimit = 1;
+	public static int enchantmentLimit = 10;
 
 	@Entry
-	public static boolean disableDurability = true;
+	public static boolean disableDurability = false;
 	@Entry
 	public static boolean disableVelocityChecks = true;
 	@Entry
 	public static boolean enhanceMobs = true;
 	@Entry
-	public static boolean freeEnchantedBookMerging = true;
+	public static boolean freeEnchantedBookMerging = false;
 	@Entry
-	public static boolean rebalanceConsumables = true;
+	public static boolean rebalanceConsumables = false;
 	@Entry
-	public static boolean rebalanceEnchantments = true;
+	public static boolean rebalanceEnchantments = false;
 	@Entry
 	public static boolean rebalanceEquipment = true;
 	@Entry
